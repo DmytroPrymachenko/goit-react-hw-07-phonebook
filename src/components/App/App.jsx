@@ -5,16 +5,7 @@ import Search from '../Search';
 
 export const App = () => {
   return (
-    <FormDiv
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 18,
-        color: '#010101',
-      }}
-    >
+    <FormDiv>
       <FormElementDiv>
         <Form />
         <Search />
