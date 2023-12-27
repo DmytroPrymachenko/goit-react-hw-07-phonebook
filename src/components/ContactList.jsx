@@ -25,9 +25,7 @@ export const ContactList = () => {
     console.log(filter);
     if (filter && items.length > 0) {
       return items.filter(el => el.name.toLowerCase().includes(filter.toLowerCase()));
-    } else {
-      return [];
-    }
+    } else return items;
   }
 
   return (
