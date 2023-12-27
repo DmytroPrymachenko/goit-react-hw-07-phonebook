@@ -33,7 +33,7 @@ export const ContactList = () => {
       <ElementUl>
         {error && <h1>{error}</h1>}
         {isLoading && <h1>Loading...</h1>}
-        {items && items.length > 0 ? (
+        {filteredContacts().length > 0 ? (
           filteredContacts().map(el => (
             <ElementsLi key={el.id}>
               <p>
