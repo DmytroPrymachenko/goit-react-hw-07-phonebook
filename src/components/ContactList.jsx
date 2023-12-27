@@ -23,8 +23,11 @@ export const ContactList = () => {
 
   function filteredContacts() {
     console.log(filter);
-    if (filter) return items.filter(el => el.name.toLowerCase().includes(filter.toLowerCase()));
-    else return items;
+    if (filter && items.length > 0) {
+      return items.filter(el => el.name.toLowerCase().includes(filter.toLowerCase()));
+    } else {
+      return [];
+    }
   }
 
   return (
