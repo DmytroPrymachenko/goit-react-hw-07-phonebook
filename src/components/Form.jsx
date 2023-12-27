@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ButtonType, FormsDiv, InputName, InputPhone, LabelName, LabelPhone } from './StylesJSX/FormStyles';
 import { useDispatch, useSelector } from 'react-redux';
-import { nanoid } from '@reduxjs/toolkit';
+// import { nanoid } from '@reduxjs/toolkit';
 
 import { selectContacts } from 'store/selector';
 import { addContactThunk } from 'store/CreateAsyncThunk';
@@ -27,7 +27,7 @@ export const Form = () => {
     let isExists = contacts.some(el => el.name.toLowerCase() === name.toLowerCase());
 
     const newContact = {
-      id: nanoid(),
+      // id: nanoid(),
       name,
       number,
     };
